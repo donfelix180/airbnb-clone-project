@@ -24,3 +24,12 @@ This section outlines the key roles and responsibilities within the project team
 ### DevOps Engineer
 *   **Responsibility:** Manages the CI/CD pipeline, deployment process, and infrastructure.
 *   **Contribution:** Automates the build, test, and deployment phases to ensure continuous and reliable delivery.
+
+## Technology Stack
+This project will utilize a modern and efficient technology stack.
+
+*   **Django:** A high-level Python web framework used for building the application's backend and creating a robust, RESTful API.
+*   **PostgreSQL:** A powerful, open-source object-relational database system used for storing the project's data, including users, properties, and bookings.
+*   **GraphQL:** An API query language that allows for more efficient data fetching from the backend.
+*   **React:** A JavaScript library for building the user interface, enabling the creation of dynamic and single-page application features.
+
