@@ -32,4 +32,45 @@ This project will utilize a modern and efficient technology stack.
 *   **PostgreSQL:** A powerful, open-source object-relational database system used for storing the project's data, including users, properties, and bookings.
 *   **GraphQL:** An API query language that allows for more efficient data fetching from the backend.
 *   **React:** A JavaScript library for building the user interface, enabling the creation of dynamic and single-page application features.
+## Database Design
+The database is structured around key entities that manage user information, property listings, and reservations.
+
+### Entities
+*   **Users:** Stores information about users registered on the platform.
+    *   `id` (Primary Key)
+    *   `username`
+    *   `email`
+    *   `password_hash`
+    *   `is_host` (boolean)
+*   **Properties:** Contains details of properties available for booking.
+    *   `id` (Primary Key)
+    *   `host_id` (Foreign Key to Users)
+    *   `title`
+    *   `description`
+    *   `price_per_night`
+*   **Bookings:** Stores reservation details made by users.
+    *   `id` (Primary Key)
+    *   `user_id` (Foreign Key to Users)
+    *   `property_id` (Foreign Key to Properties)
+    *   `check_in_date`
+    *   `check_out_date`
+*   **Reviews:** Stores reviews submitted by users for properties.
+    *   `id` (Primary Key)
+    *   `user_id` (Foreign Key to Users)
+    *   `property_id` (Foreign Key to Properties)
+    *   `rating`
+    *   `comment`
+*   **Payments:** Manages payment records related to bookings.
+    *   `id` (Primary Key)
+    *   `booking_id` (Foreign Key to Bookings)
+    *   `amount`
+    *   `status`
+    *   `transaction_id`
+
+### Entity Relationships
+*   A **User** can have multiple **Properties** (if they are a host).
+*   A **User** can create multiple **Bookings**.
+*   A **Booking** belongs to one **User** and one **Property**.
+*   A **User** can write multiple **Reviews**, and a **Property** can have multiple **Reviews**.
+*   A **Booking** can have one **Payment**.
 
