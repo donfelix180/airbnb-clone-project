@@ -83,4 +83,11 @@ This project includes the following key features:
 *   **Reviews and Ratings:** Provides a system for guests to leave reviews and ratings for properties they have booked, helping future guests make informed decisions.
 *   **Payment Processing:** Integrates a payment gateway to securely handle transactions for bookings, ensuring a reliable and safe payment experience.
 
+## API Security
+Securing the API is a critical aspect of the project to protect user data and financial information.
+
+*   **Authentication:** Ensures that only verified users can access sensitive resources. We will use a standard authentication mechanism like JWT (JSON Web Tokens) to verify user identities.
+*   **Authorization:** Defines what authenticated users are permitted to do within the application. Role-based access control will be implemented to ensure hosts and guests only have access to their respective resources.
+*   **Rate Limiting:** Prevents abuse and protects the system from excessive requests. This will help mitigate potential DoS (Denial-of-Service) attacks and brute-force attempts.
+*   **Data Encryption:** All sensitive data, especially payment information and user credentials, will be encrypted both in transit (using TLS/SSL) and at rest to protect it from unauthorized access.
 
