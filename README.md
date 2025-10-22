@@ -91,3 +91,20 @@ Securing the API is a critical aspect of the project to protect user data and fi
 *   **Rate Limiting:** Prevents abuse and protects the system from excessive requests. This will help mitigate potential DoS (Denial-of-Service) attacks and brute-force attempts.
 *   **Data Encryption:** All sensitive data, especially payment information and user credentials, will be encrypted both in transit (using TLS/SSL) and at rest to protect it from unauthorized access.
 
+## CI/CD Pipeline
+A Continuous Integration and Continuous Delivery (CI/CD) pipeline will be implemented to automate the software delivery process.
+
+**What is CI/CD?**
+CI/CD is an automated process that allows the team to frequently merge code, test changes, and deploy applications reliably.
+
+**Why is CI/CD important for this project?**
+*   **Faster Releases:** Automates the deployment process, reducing the time to get new features into production.
+*   **Higher Quality:** Automated tests are run on every code change, catching bugs early and ensuring a consistent code standard.
+*   **Reduced Risk:** Frequent, smaller integrations minimize the chances of introducing major issues.
+
+**Tools for the CI/CD Pipeline:**
+*   **GitHub Actions:** Will be used to define and automate the workflow directly within the repository.
+*   **Docker:** Will be used for containerization, ensuring a consistent environment from development to production.
+*   **Cloud Hosting:** Will be the target environment for automated deployments.
+
+
