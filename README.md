@@ -74,3 +74,13 @@ The database is structured around key entities that manage user information, pro
 *   A **User** can write multiple **Reviews**, and a **Property** can have multiple **Reviews**.
 *   A **Booking** can have one **Payment**.
 
+## Feature Breakdown
+This project includes the following key features:
+
+*   **User Management:** Allows users to register, log in, manage their profiles, and become hosts. It provides personalized dashboards for both guests and hosts.
+*   **Property Management:** Hosts can list their properties with details like title, description, and price. They can also update or remove listings as needed.
+*   **Booking System:** Enables guests to search for properties, check availability, and make reservations. It also allows hosts to view and manage incoming booking requests.
+*   **Reviews and Ratings:** Provides a system for guests to leave reviews and ratings for properties they have booked, helping future guests make informed decisions.
+*   **Payment Processing:** Integrates a payment gateway to securely handle transactions for bookings, ensuring a reliable and safe payment experience.
+
+
